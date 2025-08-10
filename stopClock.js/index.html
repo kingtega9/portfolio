@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+   <div class="container">
+    <h1>countdown Timer</h1>
+
+    <div class="timer-display" id="timer">00:00:00</div>
+
+    <div class="time-input">
+        <div>
+            <label for="hours">Hours</label>
+            <input type="number" name="" id="hours" min="0" max="99">
+        </div>
+
+        <div>
+            <label for="minutes">Minutes</label>
+            <input type="number" name="" id="minutes" min="0" max="99">
+        </div>
+
+        <div>
+            <label for="hours">Seconds</label>
+            <input type="number" name="" id="seconds" min="0" max="99">
+        </div>
+    </div>
+
+    <div class="controls">
+    <button class="btn btn-start" id="startBtn"><i class="fas fa-play"></i>Start</button>
+    <button class="btn btn-stop" id="stopBtn"><i class="fas fa-pause"></i>Stop</button>
+    <button class="btn btn-reset" id="resetBtn"><i class="fas fa-undo"></i>Reset</button>
+    <button class="btn btn-lap" id="lapBtn"><i class="fas fa-flag"></i>Lap</button>
+    </div>
+
+    <div class="laps-container">
+        <h2>Lap Times</h2>
+        <ul id="laps"></ul>
+    </div>
+    
+   </div>
+</body>
+</html>
